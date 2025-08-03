@@ -305,29 +305,62 @@
 
 // **promse chaining**
 
-function saveDT(Data){
-  return new Promise((success,failure)=>{
-    let speedLimit=Math.floor(Math.random()*10)+1;
-    if(speedLimit>4){
-     success("data was saved");
-    }else{
-      failure("data was not saved");
-    }
-  })
-}
-saveDT("pratiksha");
-saveDT("pratiksha")
-.then(()=>{
-console.log("data1 saved,success");
-return saveDT("helloworld")
-})
-.then(()=>{
-  console.log("data2 saved,success");
-  return saveDT="Salunke";
-})
-.then(()=>{
-  console.log("data3 saved,success");
-})
-.catch(()=>{
-  console.log("data was not saved!!! failure")
-});  
+// function saveDT(Data){
+//   return new Promise((success,failure)=>{
+//     let speedLimit=Math.floor(Math.random()*10)+1;
+//     if(speedLimit>4){
+//      success("data was saved");
+//     }else{
+//       failure("data was not saved");
+//     }
+//   })
+// }
+// saveDT("pratiksha");
+// saveDT("pratiksha")
+// .then(()=>{
+// console.log("data1 saved,success");
+// return saveDT("helloworld")
+// })
+// .then(()=>{
+//   console.log("data2 saved,success");
+//   return saveDT="Salunke";
+// })
+// .then(()=>{
+//   console.log("data3 saved,success");
+// })
+// .catch(()=>{
+//   console.log("data was not saved!!! failure")
+// });  
+
+// **improvved version**
+// function saveDT(Data){
+//   return new Promise((success,failure)=>{
+//     let speedLimit=Math.floor(Math.random()*10)+1;
+//     if(speedLimit>4){
+//      success("data was saved");
+//     }else{
+//       failure("data was not saved");
+//     }
+//   })
+// }
+// saveDT("pratiksha");
+// saveDT("pratiksha")
+//   .then((result)=>{
+//   console.log("data1 saved,success",result);
+//   console.log("result of promise:",result);
+//   return saveDT("helloworld")
+// })
+// .then((result)=>{
+//   console.log("data2 saved,success");
+//   console.log("result of promise:",result);
+
+//   return saveDT="Salunke";
+// })
+// .then((result)=>{
+//   console.log("data3 saved,success");
+//   console.log("result of promise:",result);
+// })
+// .catch((error)=>{
+//   console.log("data was not saved!!! failure");
+//   console.log("error of promise:",error);
+// });  
