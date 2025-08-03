@@ -282,14 +282,23 @@
 // });
 
 // "*promises*"
-// function saveDT(Data){
-//   return new Promise((success,failure)=>{
-//     let speedLimit=Math.floor(Math.random()*10)+1;
-//     if(speedLimit>4){
-//      success("data was saved");
-//     }else{
-//       failure("data was not saved");
-//     }
-//   })
-// }
-// // saveDT("pratiksha");
+function saveDT(Data){
+  return new Promise((success,failure)=>{
+    let speedLimit=Math.floor(Math.random()*10)+1;
+    if(speedLimit>4){
+     success("data was saved");
+    }else{
+      failure("data was not saved");
+    }
+  })
+}
+// saveDT("pratiksha");
+
+// **promise Method then and catch**
+saveDT("pratiksha")
+.then(()=>{
+  console.log("data saved,success")
+})
+.catch(()=>{
+  console.log("data was not saved!!! failure")
+});
