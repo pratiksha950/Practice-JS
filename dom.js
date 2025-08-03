@@ -214,7 +214,20 @@
 //  ip.value="";
 // })
 
-let btn=document.querySelector("button");
-btn.textContent="<h2>pratiksha </h2>";
-btn.textContent="<h2>pratiksha </h2>";
+// let btn=document.querySelector("button");
+// btn.textContent="<h2>pratiksha </h2>";
+// btn.textContent="<h2>pratiksha </h2>";
 // btn.innerHTML="<h2>pratiksha</h2>";
+
+// call Stack
+// function one(){
+//   return 1;
+// }
+// function two(){
+//   return one()+one();
+// }
+// function three(){
+// let ans= two()+one();
+// console.log(ans);
+// }
+// three();
