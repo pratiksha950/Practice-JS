@@ -256,3 +256,29 @@
 //   h1.style.color="red";
 // },1000);
 
+
+// settings up promises
+function saveDT(Data,success,failure){
+  let speedLimit=Math.floor(Math.random()*10)+1;
+  if(speedLimit>4){
+    success();
+    
+  }else{
+  failure() 
+   }
+}
+saveDT("apna college",()=>{
+  console.log("your data was saved");
+  saveDT("pratiksha",()=>{
+    console.log("success:data2 saved");
+    saveDT("shraddha",()=>{
+      console.log("success:data3 saved");
+    },()=>{
+      console.log("failure:data3 not saved");
+    })
+  },()=>{
+    console.log("failure:data2 not saved");
+  })
+},()=>{
+  console.log("your data was not saved!! weak connection");
+});
