@@ -205,7 +205,6 @@
 // let btn=document.querySelector("button");
 // let ul=document.querySelector("ul");
 // let ip=document.querySelector("input");
-
 // btn.addEventListener("click",function(){
 //   let item=document.createElement("li");
 //   item.innerText=ip.value;
@@ -213,13 +212,12 @@
 //  console.log(ip.value);
 //  ip.value="";
 // })
-
 // let btn=document.querySelector("button");
 // btn.textContent="<h2>pratiksha </h2>";
 // btn.textContent="<h2>pratiksha </h2>";
 // btn.innerHTML="<h2>pratiksha</h2>";
 
-// call Stack
+// **call Stack**
 // function one(){
 //   return 1;
 // }
@@ -232,7 +230,7 @@
 // }
 // three();
 
-// callback hell
+// **callback hell**
 // h1=document.querySelector("h1");
 // function changeColor(color,delay,nextColorChange){
 //   setTimeout(()=>{
@@ -257,28 +255,41 @@
 // },1000);
 
 
-// settings up promises
-function saveDT(Data,success,failure){
-  let speedLimit=Math.floor(Math.random()*10)+1;
-  if(speedLimit>4){
-    success();
+// **settings up promises**
+// function saveDT(Data,success,failure){
+//   let speedLimit=Math.floor(Math.random()*10)+1;
+//   if(speedLimit>4){
+//     success();
     
-  }else{
-  failure() 
-   }
-}
-saveDT("apna college",()=>{
-  console.log("your data was saved");
-  saveDT("pratiksha",()=>{
-    console.log("success:data2 saved");
-    saveDT("shraddha",()=>{
-      console.log("success:data3 saved");
-    },()=>{
-      console.log("failure:data3 not saved");
-    })
-  },()=>{
-    console.log("failure:data2 not saved");
-  })
-},()=>{
-  console.log("your data was not saved!! weak connection");
-});
+//   }else{
+//   failure() 
+//    }
+// }
+// saveDT("apna college",()=>{
+//   console.log("your data was saved");
+//   saveDT("pratiksha",()=>{
+//     console.log("success:data2 saved");
+//     saveDT("shraddha",()=>{
+//       console.log("success:data3 saved");
+//     },()=>{
+//       console.log("failure:data3 not saved");
+//     })
+//   },()=>{
+//     console.log("failure:data2 not saved");
+//   })
+// },()=>{
+//   console.log("your data was not saved!! weak connection");
+// });
+
+// "*promises*"
+// function saveDT(Data){
+//   return new Promise((success,failure)=>{
+//     let speedLimit=Math.floor(Math.random()*10)+1;
+//     if(speedLimit>4){
+//      success("data was saved");
+//     }else{
+//       failure("data was not saved");
+//     }
+//   })
+// }
+// // saveDT("pratiksha");
