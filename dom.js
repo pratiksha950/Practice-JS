@@ -390,11 +390,35 @@
 // })
 
 // **async function**
-async function greet(){
-  throw "pratiksha"
-  adc.adc();
-  return "hello world!";
-}
-let hello=async()=>{
-  return 5;
-};
+// async function greet(){
+//   throw "pratiksha"
+//   adc.adc();
+//   return "hello world!";
+// }
+// let hello=async()=>{
+//   return 5;
+// };
+
+
+// await keyword
+// function getNum(){
+//   return new Promise((resolve,rejected)=>{
+//     setTimeout(() => {
+//     let num=Math.floor(Math.random()*10)+1;
+//     console.log(num);
+//     resolve();
+//     }, 1000);
+//   })
+// }
+// async function demo(){
+//   await getNum();
+//   await getNum();
+//   await getNum();
+
+// }
+
+// async function demo(){
+//   changeColor("red",1000);
+//   changeColor("blue",1000);
+//   changeColor("orange",1000);
+// }
