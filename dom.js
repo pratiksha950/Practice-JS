@@ -364,3 +364,37 @@
 //   console.log("data was not saved!!! failure");
 //   console.log("error of promise:",error);
 // });  
+
+// h1=document.querySelector("h1");
+// function changeColor(color,delay){
+//   return  new Promise((resolve,reject )=>{
+//   setTimeout(()=>{
+//     h1.style.color=color;
+//     resolve("color changed");
+//   },delay);
+//    });
+// }
+
+// changeColor("red",1000)
+// .then(()=>{
+//   console.log("red color was complited")
+//   return changeColor("blue",1000);
+// })
+// .then(()=>{
+//   console.log("blue color was complited")
+//   return changeColor("orange",1000);
+// })
+// .then(()=>{
+//   console.log("orange color was complited")
+ 
+// })
+
+// **async function**
+async function greet(){
+  throw "pratiksha"
+  adc.adc();
+  return "hello world!";
+}
+let hello=async()=>{
+  return 5;
+};
