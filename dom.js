@@ -414,7 +414,6 @@
 //   await getNum();
 //   await getNum();
 //   await getNum();
-
 // }
 
 // async function demo(){
@@ -422,3 +421,28 @@
 //   changeColor("blue",1000);
 //   changeColor("orange",1000);
 // }
+
+// let data=`{"fact":"The average cat can jump 8 feet in a single bound, nearly six times its body length!","length":83}`;
+// let valid=JSON.parse(data);
+// console.log(valid);
+// console.log(data.fact);
+// console.log(data.length);
+// let student={
+//   name:"om",
+//   age:20,
+// }
+
+// API REquest
+
+let url="https://api.thecatapi.com/v1/";
+fetch(url)
+.then((responce)=>{
+  console.log(responce);
+  responce.json()
+  .then((data)=>{
+    console.log(data);
+  });
+})
+.catch((error)=>{
+  console.log("error",error);
+})
