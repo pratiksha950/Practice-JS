@@ -434,15 +434,36 @@
 
 // API REquest
 
-let url="https://api.thecatapi.com/v1/";
-fetch(url)
-.then((responce)=>{
-  console.log(responce);
-  responce.json()
-  .then((data)=>{
-    console.log(data);
-  });
-})
-.catch((error)=>{
-  console.log("error",error);
-})
+// let url="https://api.thecatapi.com/v1/";
+// fetch(url)
+// .then((responce)=>{
+//   console.log(responce);
+//   responce.json()
+//   .then((data)=>{
+//     console.log(data);
+//   });
+// })
+// .catch((error)=>{
+//   console.log("error",error);
+// })
+
+// let arr=["om","car","sai","pratiksha"];
+// console.log(arr);
+// arr.push("hii");
+// console.log(arr);
+// arr.shift("hii");
+// console.log(arr);
+
+// addition of even number
+let sumEven=0;
+let sumOdd=0;
+let arr=[2,5,4];
+for(let i=0;i<arr.length;i++){
+  if(arr[i]%2==1){
+    sumOdd+=arr[i];
+  }else{
+    sumEven+=arr[i];
+  }
+}
+console.log("sum of odd number:",sumOdd);
+console.log("sum of even number:",sumEven);
