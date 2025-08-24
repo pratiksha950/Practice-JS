@@ -467,6 +467,12 @@
 // }
 // console.log("sum of odd number:",sumOdd);
 // console.log("sum of even number:",sumEven);
-
-let arr=[2,5,4];
-for(let i=)
+//largest number
+// let arr=[2,5,4,8798,9999.999];
+// let large=arr[0];
+// for(let i=0;i<arr.length;i++){
+//   if (arr[i]>large) {
+//      large=arr[i];
+//     console.log(`largest num is ${large}`)
+//   }
+// }

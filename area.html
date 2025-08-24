@@ -3,10 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Area of rectangle</title>
+    <title>Card</title>
+    <style>
+    .container{
+        background-color: aqua;
+    }
+    .box{
+        /* height: 200px; */
+        /* width: 200px; */
+        background-color: white;
+        border: 1px solid black;
+        margin: 5px;
+        padding: 5px;
+    }
+    .text{
+        text-align: center;
+    }
+    .box-card{
+        background-color: red;
+        border: 1px solid black;
+        margin: 5px;
+        padding: 5px;
+    }
+
+
+
+    </style>
 </head>
-<body>
-    
-    <script src="./area.js"></script>
+<body class="container">
+    <h1 class="text">Students List</h1>
+    <div class="box" id="student-list"></div>
+
+   
+
+
+
+
+
+    <script>
+
+        const stu=["om","sai","ram"];
+        const studentList=document.getElementById("student-list");
+        for(let i=0;i<stu.length;i++){
+        studentList.innerHTML=studentList.innerHTML+`<div class="box-card">
+            <h2>${stu[i]}</h2></div>`;
+        }
+    </script>
 </body>
 </html>
