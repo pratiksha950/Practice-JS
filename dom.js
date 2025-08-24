@@ -455,15 +455,18 @@
 // console.log(arr);
 
 // addition of even number
-let sumEven=0;
-let sumOdd=0;
+// let sumEven=0;
+// let sumOdd=0;
+// let arr=[2,5,4];
+// for(let i=0;i<arr.length;i++){
+//   if(arr[i]%2==1){
+//     sumOdd+=arr[i];
+//   }else{
+//     sumEven+=arr[i];
+//   }
+// }
+// console.log("sum of odd number:",sumOdd);
+// console.log("sum of even number:",sumEven);
+
 let arr=[2,5,4];
-for(let i=0;i<arr.length;i++){
-  if(arr[i]%2==1){
-    sumOdd+=arr[i];
-  }else{
-    sumEven+=arr[i];
-  }
-}
-console.log("sum of odd number:",sumOdd);
-console.log("sum of even number:",sumEven);
+for(let i=)
